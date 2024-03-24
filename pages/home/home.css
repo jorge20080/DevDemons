@@ -9,6 +9,7 @@ button{
 main{
     display: flex;
     flex-direction: column-reverse;
+    margin-bottom: 80px;
 }
 main div{
     max-width: 800px;
