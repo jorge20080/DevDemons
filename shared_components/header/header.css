@@ -6,7 +6,7 @@ header{
     background-color: #fcb900;
     box-shadow: 5px 5px 5px gainsboro;
 }
-h2{
+header h2{
     margin: 0;
     text-align: center;
     padding: 10px 0;
@@ -136,7 +136,7 @@ i:hover{
     #login_btn{
         position: static;padding: 15px 20px;
     }
-    h2{
+    header h2{
         color: white;
         font-size: 40px;
         text-align: start;
