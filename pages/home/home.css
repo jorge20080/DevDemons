@@ -10,6 +10,11 @@ main{
     display: flex;
     flex-direction: column-reverse;
 }
+main div{
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
 img{
     height: 50vh;
     object-fit: contain;
@@ -27,8 +32,8 @@ img{
         background-color: white;
         object-fit:contain;
         aspect-ratio: 1;
-        /* border-radius: 50%; */
-        /* background-color: #fcb900;
+        /* border-radius: 50%;
+        background-color: #fcb900;
         background-color: #fcb9004d; */
         box-sizing: border-box;
         margin: 50px 0;
@@ -36,6 +41,8 @@ img{
     main div{
         width: 30%;
         max-width: 380px;
+        margin: 0;
+        text-align: start;
     }
     h1{
         font-size: 50px;
