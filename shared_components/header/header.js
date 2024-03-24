@@ -2,7 +2,10 @@ $(document).ready(()=>{
     const liElements = document.querySelectorAll("nav a");
     for(let element of liElements){
         element.addEventListener("click", (e)=>{
-            // $("#main_links").hide();
+            const input = document.getElementById("menu_switch");
+            input.checked = true;
+            $(".fa-x").css("display", "none");
+            $(".fa-bars").css("display", "block");
             e.preventDefault();
             document.querySelector(".active").classList.toggle("active");
             element.parentElement.classList.add("active")
