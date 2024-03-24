@@ -4,6 +4,7 @@ nav{
 header{
     padding-top: 50px;
     background-color: #fcb900;
+    box-shadow: 5px 5px 5px gainsboro;
 }
 h2{
     margin: 0;
@@ -62,6 +63,12 @@ a{
 ul div{
     display: block;
 }
+i{
+    font-size: 25px;
+}
+i:hover{
+    cursor: pointer;
+}
 @media screen and (min-width:1200px){
     .logo_container{
         background-color: transparent;
@@ -76,7 +83,7 @@ ul div{
         align-items: center;
         background-color: #642b68;
         justify-content: space-between;
-        padding: 0 20px;
+        padding: 0 40px;
     }
     nav{
         display: flex;
