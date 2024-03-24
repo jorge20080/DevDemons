@@ -54,15 +54,16 @@ a{
     top: 85px;
     right: 20px;
 }
+/* ul div{
+    transition: all 1s ease-in-out;
+} */
 #menu_switch:checked ~ ul div{
     display: none ;
 }
 #menu_switch {
     display: none;
 } 
-ul div{
-    display: block;
-}
+
 i{
     font-size: 25px;
 }
@@ -144,6 +145,7 @@ i:hover{
     }
     .active::after{
         transform: scale(1,1);
+        border-radius: 5px;
     }
     li::after{
         content:'';
