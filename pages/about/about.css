@@ -1,5 +1,5 @@
 main{
-    margin: 0 200px;
+    margin: 0 30px;
 }
 h1{
     font-size: 40px;
@@ -10,4 +10,9 @@ h1,h2,h3,h4{
 }
 h4 span{
     color: black;
+}
+@media screen and (min-width:1200px){
+    main{
+        margin: 0 150px;
+    }
 }
