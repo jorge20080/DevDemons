@@ -1,0 +1,30 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    height: calc(100vh - 250px);
+    background-color: white;
+    object-fit:contain;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #fcb900;
+    box-sizing: border-box;
+    margin: 50px 0;
+}
+main div{
+    width: 30%;
+}
+h1{
+    font-size: 50px;
+    font-weight: 500;
+}
+button{
+    background-color: #642b68;
+    padding: 10px 50px;
+    color: white;
+    border: 1px solid gainsboro;
+    border-radius: 30px;
+    font-size: 20px;
+}
