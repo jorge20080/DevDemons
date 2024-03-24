@@ -51,7 +51,7 @@ a{
 }
 #menu{
     position: absolute;
-    top: 85px;
+    top: 82px;
     right: 20px;
 }
 /* ul div{
@@ -65,7 +65,7 @@ a{
 } 
 
 i{
-    font-size: 25px;
+    font-size: 30px;
 }
 i:hover{
     cursor: pointer;
