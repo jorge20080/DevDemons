@@ -19,17 +19,17 @@ img{
     main{
         justify-content: center;
         align-items: center;
-        column-gap: 30px;
-        flex-direction: row;
+        /* column-gap: 30px; */
+        flex-direction: row; 
     }
     img{
         height: calc(100vh - 250px);
         background-color: white;
         object-fit:contain;
         aspect-ratio: 1;
-        border-radius: 50%;
-        background-color: #fcb900;
-        background-color: #fcb9004d;
+        /* border-radius: 50%; */
+        /* background-color: #fcb900;
+        background-color: #fcb9004d; */
         box-sizing: border-box;
         margin: 50px 0;
     }
