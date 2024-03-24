@@ -8,22 +8,28 @@
     <title>Header</title>
     <link rel="stylesheet" href="header.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <script src="header.js" defer></script>
+
 </head>
 <body>
     <header>
         <div class="logo_container">
             <h2>LOGO</h2>
+            <i class="fa-solid fa-bars"></i>
         </div>
         <nav class="nav">
+            <label id="menu" for="menu_switch">Show</label>
+            <input checked id="menu_switch" type="checkbox"/>
             <ul>
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="/">Events</a></li>
-                <li><a href="#">Resources</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Discuss</a></li>
-                <li><a href="#">About</a></li>
+                <div id="main_links">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="/">Events</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Discuss</a></li>
+                    <li><a href="#">About</a></li>
+                </div>
                 <li id="join_btn"><a >Join For Free</a></li>
                 <li id="login_btn"><a href="../index.html">Login </a></li>
             </ul>
