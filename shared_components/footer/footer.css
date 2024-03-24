@@ -3,15 +3,17 @@ footer ul{
     gap: 30px;
 }
 #site_links{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
 }
 #social_links{
     display: flex;
+    justify-content: center;
 }
 footer{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     background-color: #fcb900;
     padding: 20px 40px;
@@ -22,4 +24,19 @@ footer ul a{
     font-size: 14px;
     font-weight: 600;
     color: rgb(60, 60, 60);
+}
+
+@media screen and (min-width:1200px){
+    footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fcb900;
+        padding: 20px 40px;
+        position: sticky;
+        bottom:0;
+    }
+    #site_links{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
