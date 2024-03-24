@@ -2,6 +2,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    column-gap: 30px;
 }
 img{
     height: calc(100vh - 250px);
@@ -10,11 +11,13 @@ img{
     aspect-ratio: 1;
     border-radius: 50%;
     background-color: #fcb900;
+    background-color: #fcb9004d;
     box-sizing: border-box;
     margin: 50px 0;
 }
 main div{
     width: 30%;
+    max-width: 380px;
 }
 h1{
     font-size: 50px;
