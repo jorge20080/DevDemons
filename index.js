@@ -7,4 +7,8 @@ $(document).ready(()=>{
         $('head').append('<script id="homejs" src="pages/home/home.js"></script>');
         $('head').append('<link id="homecss" rel="stylesheet" href="pages/home/home.css">');
     });
+    $("#footer_container").load("shared_components/footer/footer.html footer",()=>{
+        $('head').append('<script src="shared_components/footer/footer.js"></script>');
+        $('head').append('<link rel="stylesheet" href="shared_components/footer/footer.css">');
+    });
 })

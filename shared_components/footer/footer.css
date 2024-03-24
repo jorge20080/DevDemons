@@ -1,0 +1,25 @@
+footer ul{
+    list-style: none;
+    gap: 30px;
+}
+#site_links{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#social_links{
+    display: flex;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fcb900;
+    padding: 20px 40px;
+    position: sticky;
+    bottom:0;
+}
+footer ul a{
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(60, 60, 60);
+}
