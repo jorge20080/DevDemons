@@ -131,7 +131,8 @@ i:hover{
         position: static;
     }
     #login_btn{
-        position: static;padding: 15px 20px;
+        position: static;
+        padding: 15px 20px;
     }
     header h2{
         color: white;
