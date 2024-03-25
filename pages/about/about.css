@@ -6,6 +6,15 @@ main{
 h1{
     font-size: 40px;
 }
+h2{
+    font-size: 35px;
+}
+h3{
+    font-size: 30px;
+}
+h4{
+    font-size: 25px;
+}
 h1,h2,h3,h4{
     color: #642b68;
     font-weight: 600;
@@ -13,8 +22,11 @@ h1,h2,h3,h4{
 h4 span{
     color: black;
 }
+main section p, main section li{
+    font-size: 20px;
+}
 @media screen and (min-width:1200px){
     main{
-        /* margin: 0 150px; */
+        margin: 0 150px;
     }
 }
