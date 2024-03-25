@@ -5,6 +5,7 @@ footer ul{
 #site_links{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 #social_links{
     display: flex;
@@ -17,9 +18,11 @@ footer{
     align-items: center;
     background-color: #fcb900;
     padding: 20px 40px;
-    position: fixed;
-    bottom:0;
+    /* position: fixed; */
+    /* bottom:0; */
     width: 100%;
+    box-sizing: border-box;
+    /* position: sticky; */
 }
 footer ul a{
     font-size: 14px;

@@ -1,6 +1,7 @@
 main{
     margin: 0 30px;
     padding-bottom: 100px;
+    min-height: calc(100vh - 384px);
 }
 h1{
     font-size: 40px;
@@ -14,6 +15,6 @@ h4 span{
 }
 @media screen and (min-width:1200px){
     main{
-        margin: 0 150px;
+        /* margin: 0 150px; */
     }
 }
