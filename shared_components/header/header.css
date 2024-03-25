@@ -51,19 +51,15 @@ a{
 }
 #menu{
     position: absolute;
-    top: 82px;
+    top: 80px;
     right: 20px;
 }
-/* ul div{
-    transition: all 1s ease-in-out;
-} */
 #menu_switch:checked ~ ul div{
     display: none ;
 }
 #menu_switch {
     display: none;
 } 
-
 i{
     font-size: 30px;
 }
@@ -124,6 +120,7 @@ i:hover{
         color: inherit;
         text-decoration: none;
         font-size: 16px;
+        cursor: pointer;
     }
     #join_btn{
         background-color: #fcb900;
@@ -142,7 +139,7 @@ i:hover{
         text-align: start;
         padding: 20px
     }
-    .active{
+    #main_links .active{
         color: #642b68;
         font-weight: 600;
         z-index: 100;
@@ -151,7 +148,7 @@ i:hover{
         transform: scale(1,1);
         border-radius: 5px;
     }
-    li::after{
+    ul div li::after{
         content:'';
         transition: transform 250ms ease-in-out;
         transform-origin: top;

@@ -31,6 +31,16 @@ $(document).ready(()=>{
             $('head').append('<link id="homecss" rel="stylesheet" href="pages/home/home.css">');
         });
     })
+    $("#join_btn").on("click",()=>{
+        $(`#${currenPage}css`).remove();
+        $(`#${currenPage}js`).remove();
+        currenPage = "register";
+        $("#content_container").load("pages/register/register.html #form_container",()=>{
+            $('head').append('<script id="registerjs" src="pages/register/register.js"></script>');
+            $('head').append('<link id="registercss" rel="stylesheet" href="pages/register/register.css">');
+        });
+    })
+
     $(".fa-bars").on("click",(e)=>{
         e.target.style="display:none";
         $(".fa-x").css("display", "block");

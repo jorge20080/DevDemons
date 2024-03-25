@@ -1,6 +1,7 @@
 footer ul{
     list-style: none;
     gap: 30px;
+    padding: 0;
 }
 #site_links{
     display: flex;
