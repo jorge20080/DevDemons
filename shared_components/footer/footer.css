@@ -17,8 +17,9 @@ footer{
     align-items: center;
     background-color: #fcb900;
     padding: 20px 40px;
-    position: sticky;
+    position: fixed;
     bottom:0;
+    width: 100%;
 }
 footer ul a{
     font-size: 14px;
@@ -33,8 +34,6 @@ footer ul a{
         align-items: center;
         background-color: #fcb900;
         padding: 20px 40px;
-        position: sticky;
-        bottom:0;
     }
     #site_links{
         grid-template-columns: 1fr 1fr 1fr;
