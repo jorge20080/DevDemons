@@ -19,6 +19,7 @@ main div{
 img{
     height: 50vh;
     object-fit: contain;
+    z-index: -1;
 }
 h1{
     color: #642b68;
