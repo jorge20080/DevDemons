@@ -32,7 +32,7 @@ h1{
         flex-direction: row; 
     }
     img{
-        height: calc(100vh - 250px);
+        height: calc(100vh - 240px);
         background-color: white;
         object-fit:contain;
         aspect-ratio: 1;
@@ -40,7 +40,8 @@ h1{
         background-color: #fcb900;
         background-color: #fcb9004d; */
         box-sizing: border-box;
-        margin: 50px 0;
+        /* margin: 50px 0; */
+        margin-bottom: 50px;
     }
     main div{
         width: 30%;
