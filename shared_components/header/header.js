@@ -18,6 +18,7 @@ $(document).ready(()=>{
         $(`#${currenPage}js`).remove();
         currentElement = 'about';
         $("#content_container").load("pages/about/about.html main",()=>{
+            $('title').text("About");
             $('head').append('<script id="aboutjs" src="pages/about/about.js"></script>');
             $('head').append('<link id="aboutcss" rel="stylesheet" href="pages/about/about.css">');
         });
@@ -27,6 +28,7 @@ $(document).ready(()=>{
         $(`#${currenPage}js`).remove();
         currenPage = "home";
         $("#content_container").load("pages/home/home.html main",()=>{
+            $('title').text("Home");
             $('head').append('<script id="homejs" src="pages/home/home.js"></script>');
             $('head').append('<link id="homecss" rel="stylesheet" href="pages/home/home.css">');
         });
@@ -36,6 +38,7 @@ $(document).ready(()=>{
         $(`#${currenPage}js`).remove();
         currenPage = "register";
         $("#content_container").load("pages/register/register.html #form_container",()=>{
+            $('title').text("Register");
             $('head').append('<script id="registerjs" src="pages/register/register.js"></script>');
             $('head').append('<link id="registercss" rel="stylesheet" href="pages/register/register.css">');
         });
