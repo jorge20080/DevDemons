@@ -2,7 +2,7 @@
 
 // console.log(events)
 $(document).ready(()=>{
-    fetch("../../data/events.json").then(data=> data.json()).then(data=>{
+    fetch("data/events.json").then(data=> data.json()).then(data=>{
         data.forEach(event=>{
             const date = new Date(event.date);
             const month = date.toLocaleString('default', { month: 'short' });
