@@ -1,5 +1,8 @@
 main{
-    margin: 0 50px;
+    margin: 0 7.5%;
+}
+h1{
+    font-weight: 500;
 }
 ul{
     list-style: none;
@@ -31,20 +34,21 @@ main li{
     display: flex;
     column-gap: 50px;
     align-items: center;
-    margin: 50px 100px;
+    margin-block: 50px;
 }
-form{
+/* form{
     width: 100%;
     display: flex;
     position: relative;
-}
+} */
 input[type="search"]{
     height: 50px;
     width: 100%;
     border: 1px solid gainsboro;
     border-radius: 50px;
+    padding: 0 20px;
 }
-form button{
+/* form button{
     aspect-ratio: 1;
     height: 50px;
     border: 1px solid gainsboro;
@@ -54,15 +58,15 @@ form button{
     border-radius: 50%;
     background-color: #fcb900;
     background-color: gray;
-}
+} */
 main a{
     color: #642b68;
     font-size: 25px;
 }
-form button>i{
+/* form button>i{
     font-size: 20px;
     color: white;
-}
+} */
 .fa-location-dot{
     font-size: 25px;
     color: rgb(152, 130, 4);
