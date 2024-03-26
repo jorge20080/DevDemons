@@ -1,14 +1,7 @@
-footer ul{
+#social_links{
     list-style: none;
     gap: 30px;
     padding: 0;
-}
-#site_links{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-#social_links{
     display: flex;
     justify-content: center;
 }
@@ -19,27 +12,11 @@ footer{
     align-items: center;
     background-color: #fcb900;
     padding: 20px 40px;
-    /* position: fixed; */
-    /* bottom:0; */
     width: 100%;
     box-sizing: border-box;
-    /* position: sticky; */
 }
 footer ul a{
     font-size: 14px;
     font-weight: 600;
     color: rgb(60, 60, 60);
-}
-
-@media screen and (min-width:1200px){
-    footer{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #fcb900;
-        padding: 20px 40px;
-    }
-    #site_links{
-        grid-template-columns: 1fr 1fr 1fr;
-    }
 }
