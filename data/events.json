@@ -1,20 +1,23 @@
 [
     {
         "eventId": 1,
-        "name": "Testing1",
-        "description": "description Tests",
-        "date": "2024-10-10"
+        "name": "10-Year Anniversary Gala",
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae amet delectus sunt quia tenetur voluptatem eaque debitis. Suscipit cum odio a reiciendis. Sunt odit at voluptates corrupti quos mollitia dolor",
+        "date": "2024-10-20T08:00:00",
+        "location": "123 St"
     },
     {
         "eventId": 2,
-        "name": "Testing2",
-        "description": "description Tests2",
-        "date": "2024-10-10"
+        "name": "DreamBigSudbury Career Discovery Expo 2024",
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae amet delectus sunt quia tenetur voluptatem eaque debitis. Suscipit cum odio a reiciendis. Sunt odit at voluptates corrupti quos mollitia dolor",
+        "date": "2024-10-25T10:00:00",
+        "location": "123 St"
     },
     {
         "eventId": 3,
-        "name": "Testing3",
-        "description": "description Tests3",
-        "date": "2024-10-10"
+        "name": "International Day of the Girl 2024",
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae amet delectus sunt quia tenetur voluptatem eaque debitis. Suscipit cum odio a reiciendis. Sunt odit at voluptates corrupti quos mollitia dolor",
+        "date": "2024-10-10T07:00:00",
+        "location": "123 St"
     }
 ]
