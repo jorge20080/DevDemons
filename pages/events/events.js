@@ -16,7 +16,7 @@ $(document).ready(()=>{
                         <p><span><b>Time: </b></span>${date.toLocaleTimeString()}</p>
                         <a>${event.name}</a>
                         <p>${event.description}</p>
-                        <p>${event.location}</p>
+                        <p><i class="fa-solid fa-location-dot"></i>&nbsp; &nbsp; &nbsp; ${event.location}</p>
                     </div>
                 </li>`
             );
