@@ -31,11 +31,12 @@ ul{
     font-size: 30px;
 }
 main li{
-    display: flex;
-    column-gap: 50px;
-    align-items: center;
     margin-block: 50px;
 }
+/* main li{
+    display: grid;
+    justify-content: center;
+} */
 /* form{
     width: 100%;
     display: flex;
@@ -70,4 +71,11 @@ main a{
 .fa-location-dot{
     font-size: 25px;
     color: rgb(152, 130, 4);
+}
+@media screen and (min-width:1200px){
+    main li{
+        display: flex;
+        column-gap: 50px;
+        align-items: center;
+    }
 }
