@@ -23,13 +23,21 @@ footer ul a{
 footer i{
     transition: transform 300ms ease-in-out;
 }
-footer .grow{
+footer i:hover{
     transform: scale(2,2);
 }
-.grow::after{
-    /* content:'test'; */
+/* footer i:hover::after{
+    display: block;
+    font-size: 20px;
+    transform: scale(1,1);
+}
+.fa-facebook::after{
+    content:'Facebook';
+}
+i::after{
     position: absolute;
     top: -50px;
     left:0;
     right:0;
-}
+    display: none;
+} */
