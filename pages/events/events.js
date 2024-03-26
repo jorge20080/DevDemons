@@ -34,10 +34,10 @@ function createEventsAndAppendToDom(events){
                         <span>${(date.getDate()+1)}</span>
                     </div>
                     <div>
-                        <p><span><b>Time: </b></span>${date.toLocaleTimeString()}</p>
                         <a>${event.name}</a>
                         <p>${event.description}</p>
-                        <p><i class="fa-solid fa-location-dot"></i>&nbsp; &nbsp; &nbsp; ${event.location}</p>
+                        <p><i class="fa-regular fa-clock"></i>&nbsp;&nbsp;&nbsp;${date.toLocaleTimeString()}</p>
+                        <p><i class="fa-regular fa-map"></i></i>&nbsp;&nbsp;&nbsp;${event.location}</p>
                     </div>
                 </li>`
             );

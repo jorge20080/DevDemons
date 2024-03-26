@@ -64,13 +64,8 @@ main a{
     color: #642b68;
     font-size: 25px;
 }
-/* form button>i{
-    font-size: 20px;
-    color: white;
-} */
-.fa-location-dot{
-    font-size: 25px;
-    color: rgb(152, 130, 4);
+main i{
+    font-size: 22px;
 }
 @media screen and (min-width:1200px){
     main li{
