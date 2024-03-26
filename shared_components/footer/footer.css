@@ -22,6 +22,7 @@ footer ul a{
 }
 footer i{
     transition: transform 300ms ease-in-out;
+    color: #642b68;
 }
 footer i:hover{
     transform: scale(2,2);
