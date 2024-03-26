@@ -1,4 +1,3 @@
-let currenPage = "home";
 $(document).ready(()=>{
     handleClickLinks();
     $("#about_link").on("click",()=> loadPagesLinks("about"));
@@ -11,11 +10,16 @@ $(document).ready(()=>{
     $("#join_btn").on("click",()=> loadPagesLinks("register", "#form_container"));
     handleMenuClickChanges();
 })
+let currentPage = "home";
 
 function loadPagesLinks(pageName, elementToImport = "main"){
-    $(`#${currenPage}css`).remove();
-    $(`#${currenPage}js`).remove();
-    currentElement = pageName;
+    let currentPage = "home";
+    if(window.location.href.includes("=")){
+        currentPage = window.location.href.split("=")[1];
+    }
+    $(`#${currentPage}css`).remove();
+    $(`#${currentPage}js`).remove();
+    window.history.replaceState(null, null, `?page=${pageName}`);
     $("#content_container").load(`pages/${pageName}/${pageName}.html ${elementToImport}`,()=>{
         $('title').text(pageName);
         $('head').append(`<script id="${pageName}js" src="pages/${pageName}/${pageName}.js"></script>`);
@@ -32,7 +36,6 @@ function handleMenuClickChanges(){
         $(".fa-bars").css("display", "block");
     })
 }
-
 function handleClickLinks(){
     const liElements = document.querySelectorAll("nav a");
     for(let element of liElements){
