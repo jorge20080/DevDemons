@@ -16,9 +16,12 @@ footer{
     box-sizing: border-box;
 }
 footer ul a{
-    font-size: 14px;
-    font-weight: 600;
-    color: rgb(60, 60, 60);
+    background-color: white;
+    display: grid;
+    place-content: center;
+    aspect-ratio: 1;
+    width: 50px;
+    border-radius: 50%;
 }
 footer i{
     transition: transform 300ms ease-in-out;
