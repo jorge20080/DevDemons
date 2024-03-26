@@ -7,6 +7,7 @@ $(document).ready(()=>{
         $('head').append('<script id="homejs" src="pages/home/home.js"></script>');
         $('head').append('<link id="homecss" rel="stylesheet" href="pages/home/home.css">');
         $('title').text("Home");
+        localStorage.setItem("currentPage", "home")
     });
     $("#footer_container").load("shared_components/footer/footer.html footer",()=>{
         $('head').append('<script src="shared_components/footer/footer.js"></script>');

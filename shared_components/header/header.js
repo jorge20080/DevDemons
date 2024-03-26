@@ -10,16 +10,16 @@ $(document).ready(()=>{
     $("#join_btn").on("click",()=> loadPagesLinks("register", "#form_container"));
     handleMenuClickChanges();
 })
-let currentPage = "home";
 
 function loadPagesLinks(pageName, elementToImport = "main"){
-    let currentPage = "home";
-    if(window.location.href.includes("=")){
-        currentPage = window.location.href.split("=")[1];
+    let currentPage = localStorage.getItem("currentPage");
+    if(currentPage===undefined){
+
+    } else{
+        $(`#${currentPage}css`).remove();
+        $(`#${currentPage}js`).remove();
     }
-    $(`#${currentPage}css`).remove();
-    $(`#${currentPage}js`).remove();
-    window.history.replaceState(null, null, `?page=${pageName}`);
+    localStorage.setItem("currentPage", pageName)
     $("#content_container").load(`pages/${pageName}/${pageName}.html ${elementToImport}`,()=>{
         $('title').text(pageName);
         $('head').append(`<script id="${pageName}js" src="pages/${pageName}/${pageName}.js"></script>`);
