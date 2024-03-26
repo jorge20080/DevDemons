@@ -1,0 +1,20 @@
+[
+    {
+        "eventId": 1,
+        "name": "Testing1",
+        "description": "description Tests",
+        "date": "2024-10-10"
+    },
+    {
+        "eventId": 2,
+        "name": "Testing2",
+        "description": "description Tests2",
+        "date": "2024-10-10"
+    },
+    {
+        "eventId": 3,
+        "name": "Testing3",
+        "description": "description Tests3",
+        "date": "2024-10-10"
+    }
+]

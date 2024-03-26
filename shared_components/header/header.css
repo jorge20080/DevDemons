@@ -6,6 +6,13 @@ header{
     background-color: #fcb900;
     box-shadow: 5px 5px 5px gainsboro;
 }
+header img{
+    width: 200px;
+    object-fit:contain;
+    aspect-ratio:initial;
+    height: auto;
+    margin:0;
+}
 header h2{
     margin: 0;
     text-align: center;
@@ -51,7 +58,7 @@ a{
 }
 #menu{
     position: absolute;
-    top: 82px;
+    top: 90px;
     right: 20px;
 }
 #menu_switch:checked ~ ul div{
@@ -84,6 +91,7 @@ i:hover{
         background-color: #642b68;
         justify-content: space-between;
         padding: 0 40px;
+        background-color: white;
     }
     nav{
         display: flex;
@@ -92,6 +100,7 @@ i:hover{
         height: 150px;
         justify-content:space-between;
         box-sizing: border-box;
+        background-color: white;
     }
     header ul{
         list-style: none;
@@ -115,6 +124,7 @@ i:hover{
         padding: 15px 25px;
         text-transform: uppercase;
         position: relative;
+        color: #642b68;
     }
     a, a:visited{
         color: inherit;
@@ -123,12 +133,12 @@ i:hover{
         cursor: pointer;
     }
     #join_btn{
-        background-color: #fcb900;
-        color: black;
         border:none;
         padding: 15px 20px;
         border-radius: 50px;
         position: static;
+        border: 1px solid #fcb900;
+        color: black;
     }
     #login_btn{
         position: static;
@@ -141,25 +151,25 @@ i:hover{
         padding: 20px
     }
     #main_links .active{
-        color: #642b68;
         font-weight: 600;
         z-index: 100;
+        color: white;
     }
     .active::after{
         transform: scale(1,1);
-        border-radius: 5px;
     }
     ul div li::after{
         content:'';
         transition: transform 250ms ease-in-out;
         transform-origin: top;
         position: absolute;
-        top:0;
+        top: 0;
         left: 0;
         right: 0;
         height: 100%;
         z-index: -1;
         transform: scale(1,0);
-        background-color: rgba(255, 255, 255, 0.875);
+        background-color: #fcb900;
+        border-radius: 50px 0 50px 0 ;
     }
 }
