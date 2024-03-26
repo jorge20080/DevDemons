@@ -1,4 +1,39 @@
+let currenPage = "home";
 $(document).ready(()=>{
+    handleClickLinks();
+    $("#about_link").on("click",()=> loadPagesLinks("about"));
+    $("#home_link").on("click",()=> loadPagesLinks("home"));
+    $("#events_link").on("click",()=> loadPagesLinks("events"));
+    $("#resources_link").on("click",()=> loadPagesLinks("resources"));
+    $("#news_link").on("click",()=> loadPagesLinks("news"));
+    $("#discuss_link").on("click",()=> loadPagesLinks("discuss"));
+    $("#login_link").on("click",()=> loadPagesLinks("login"));
+    $("#join_btn").on("click",()=> loadPagesLinks("register", "#form_container"));
+    handleMenuClickChanges();
+})
+
+function loadPagesLinks(pageName, elementToImport = "main"){
+    $(`#${currenPage}css`).remove();
+    $(`#${currenPage}js`).remove();
+    currentElement = pageName;
+    $("#content_container").load(`pages/${pageName}/${pageName}.html ${elementToImport}`,()=>{
+        $('title').text(pageName);
+        $('head').append(`<script id="${pageName}js" src="pages/${pageName}/${pageName}.js"></script>`);
+        $('head').append(`<link id="${pageName}css" rel="stylesheet" href="pages/${pageName}/${pageName}.css">`);
+    });
+}
+function handleMenuClickChanges(){
+    $(".fa-bars").on("click",(e)=>{
+        e.target.style="display:none";
+        $(".fa-x").css("display", "block");
+    })
+    $(".fa-x").on("click",(e)=>{
+        e.target.style="display:none";
+        $(".fa-bars").css("display", "block");
+    })
+}
+
+function handleClickLinks(){
     const liElements = document.querySelectorAll("nav a");
     for(let element of liElements){
         element.addEventListener("click", (e)=>{
@@ -11,45 +46,4 @@ $(document).ready(()=>{
             element.parentElement.classList.add("active")
         });
     }
-    let currenPage = "home";
-
-    $("#about_link").on("click",()=>{
-        $(`#${currenPage}css`).remove();
-        $(`#${currenPage}js`).remove();
-        currentElement = 'about';
-        $("#content_container").load("pages/about/about.html main",()=>{
-            $('title').text("About");
-            $('head').append('<script id="aboutjs" src="pages/about/about.js"></script>');
-            $('head').append('<link id="aboutcss" rel="stylesheet" href="pages/about/about.css">');
-        });
-    })
-    $("#home_link").on("click",()=>{
-        $(`#${currenPage}css`).remove();
-        $(`#${currenPage}js`).remove();
-        currenPage = "home";
-        $("#content_container").load("pages/home/home.html main",()=>{
-            $('title').text("Home");
-            $('head').append('<script id="homejs" src="pages/home/home.js"></script>');
-            $('head').append('<link id="homecss" rel="stylesheet" href="pages/home/home.css">');
-        });
-    })
-    $("#join_btn").on("click",()=>{
-        $(`#${currenPage}css`).remove();
-        $(`#${currenPage}js`).remove();
-        currenPage = "register";
-        $("#content_container").load("pages/register/register.html #form_container",()=>{
-            $('title').text("Register");
-            $('head').append('<script id="registerjs" src="pages/register/register.js"></script>');
-            $('head').append('<link id="registercss" rel="stylesheet" href="pages/register/register.css">');
-        });
-    })
-
-    $(".fa-bars").on("click",(e)=>{
-        e.target.style="display:none";
-        $(".fa-x").css("display", "block");
-    })
-    $(".fa-x").on("click",(e)=>{
-        e.target.style="display:none";
-        $(".fa-bars").css("display", "block");
-    })
-})
+}
