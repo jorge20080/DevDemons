@@ -137,8 +137,10 @@ i:hover{
         padding: 15px 20px;
         border-radius: 50px;
         position: static;
+        /* border: 1px solid #c79200;
+        color: #c79200; */
         border: 1px solid #fcb900;
-        color: black;
+        color: gray;
     }
     #login_btn{
         position: static;
