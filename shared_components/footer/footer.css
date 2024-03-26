@@ -20,3 +20,16 @@ footer ul a{
     font-weight: 600;
     color: rgb(60, 60, 60);
 }
+footer i{
+    transition: transform 300ms ease-in-out;
+}
+footer .grow{
+    transform: scale(2,2);
+}
+.grow::after{
+    /* content:'test'; */
+    position: absolute;
+    top: -50px;
+    left:0;
+    right:0;
+}
