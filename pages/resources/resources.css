@@ -3,6 +3,15 @@ main{
 }
 main ul h2{
     margin: 0 0 20px 0;
+    /* background-color: cornsilk;
+    color: black; */
+    padding: 5px;
+    background-color: #642b68;
+    color: white;
+    font-weight: 100;
+}
+main ul a, main ul a:visited{
+    color: #642b68;
 }
 main > ul{
     display: flex;
@@ -12,14 +21,22 @@ main > ul{
     list-style: none;
     /* grid-template-columns: 1fr 1fr 1fr; */
     padding:0;
-    justify-content: center;
+    /* width:100%;
+    background-color: red;
+    margin: auto; */
 }
 main >ul >li:nth-of-type(5){
     justify-self: start;
 }
 main > ul >li{
-    min-width: 350px;
+    min-width: 370px;
     flex-basis: 0;
-    background-color:cornsilk;
-    padding: 15px;
+    padding: 0;
+    box-shadow: 2px 2px 5px gainsboro;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 400px;
+}
+main > ul > li  ul > li{
+    padding: 10px 0 ;
 }

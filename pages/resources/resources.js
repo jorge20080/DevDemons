@@ -6,9 +6,9 @@ $(document).ready(()=>{
                     <section>
                         <h2>${item.title}</h2>
                         <ul>
-                            ${item.resources.map((resource)=>{
+                            ${(item.resources.map((resource)=>{
                                 return "<li><a target='_blank' href='" + resource.url + "'>"+ resource.name +"</a></li>"
-                            })}
+                            })).join('')}
                         </ul>
                     </section>
                 </li>
