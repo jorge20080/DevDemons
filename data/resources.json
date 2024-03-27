@@ -1,0 +1,112 @@
+[
+    {
+        "title":"Career Exploration",
+        "resources": [
+            {
+                "name":"Apprentice Search",
+                "url": "https://apprenticesearch.com/"
+            },
+            {
+                "name":"Canada Startups",
+                "url": "http://canadastartups.org/"
+            },
+            {
+                "name":"Canadian Apprenticeship Forum",
+                "url": "https://caf-fca.org/"
+            },
+            {
+                "name":"Canadian Apprenticeship Serviceh",
+                "url": "https://apprenticesearch.com/cas"
+            },
+            {
+                "name":"Fire Fighters Association of Ontario",
+                "url": "https://ffao.on.ca/"
+            },
+            {
+                "name":"Industrial Automation Career Guide",
+                "url": "https://mydigitalpublication.com/publication/?i=658896"
+            },
+            {
+                "name": "Job Bank",
+                "url": "https://www.jobbank.gc.ca/career-planning"
+            }
+        ]
+    },
+    {
+        "title": "Mental Health",
+        "resources":[
+            {
+                "name": "Kids Help Phone",
+                "url": "https://kidshelpphone.ca/"
+            },
+            {
+                "name": "Canadian Mental Health Association",
+                "url": "https://cmha.ca/find-your-cmha"
+            },
+            {
+                "name": "Light Up The Dark",
+                "url": "https://lightupthedark.ca/"
+            }
+        ]
+    },
+    {
+        "title": "Experiential Learning",
+        "resources":[
+            {
+                "name": "Ontario Youth Apprenticeship Program",
+                "url": "https://oyap.com/splash/"
+            },
+            {
+                "name": "Specialist High Skills Major",
+                "url": "http://www.edu.gov.on.ca/morestudentsuccess/SHSM.html"
+            },
+            {
+                "name": "Youth Apprenticeship Programs in Canada",
+                "url": "https://careersintrades.ca/whats-an-apprenticeship/youth-apprenticeship-programs/"
+            }
+        ]
+    },
+    {
+        "title": "Extracurricular Skill Building",
+        "resources":[
+            {
+                "name": "Canada Learning Code",
+                "url": "https://www.canadalearningcode.ca/"
+            },
+            {
+                "name": "Skills Canada",
+                "url": "https://www.skillscompetencescanada.com/en/"
+            },
+            {
+                "name": "STEM Minds",
+                "url": "https://www.stemminds.com/"
+            },
+            {
+                "name": "Student Cyber Awareness Certification",
+                "url": "https://resources.nextdimensioninc.com/student-cyber-awareness-certification"
+            }
+            ,
+            {
+                "name": "Volunteer Canada",
+                "url": "https://volunteer.ca/"
+            }
+        ]
+    },
+    {
+        "title": "Experiential Learning",
+        "resources":[
+            {
+                "name": "Eluta",
+                "url": "https://www.eluta.ca/"
+            },
+            {
+                "name": "Indeed",
+                "url": "https://ca.indeed.com/"
+            },
+            {
+                "name": "Canadian Federal Job Bank",
+                "url": "https://www.jobbank.gc.ca/"
+            }
+        ]
+    }
+]
