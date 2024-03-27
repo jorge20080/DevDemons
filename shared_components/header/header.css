@@ -137,13 +137,17 @@ i:hover{
     }
     #join_btn{
         border:none;
-        padding: 15px 20px;
+        padding: 10px 20px;
         border-radius: 50px;
         position: static;
         /* border: 1px solid #c79200;
         color: #c79200; */
         border: 1px solid #fcb900;
         color: gray;
+    }
+    #join_btn:hover{
+        background-color: #fcb900;
+        color: white;
     }
     #login_btn{
         position: static;

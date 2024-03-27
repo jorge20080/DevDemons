@@ -17,16 +17,17 @@ footer{
 }
 footer ul a{
     background-color: #642b685c;
+    background-color: rgba(255, 255, 255, 0.467);
     display: grid;
     place-content: center;
     aspect-ratio: 1;
     width: 50px;
     border-radius: 50%;
+    border: 1px solid gray;
 }
 footer i{
     transition: transform 300ms ease-in-out;
-    color: #642b68;
-    color: aliceblue;
+    color: #642b68cd;
 }
 footer i:hover{
     transform: scale(2,2);
