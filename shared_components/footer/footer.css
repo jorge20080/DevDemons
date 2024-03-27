@@ -16,16 +16,17 @@ footer{
     box-sizing: border-box;
 }
 footer ul a{
-    background-color: white;
+    background-color: #642b68;
     display: grid;
     place-content: center;
     aspect-ratio: 1;
-    width: 50px;
+    width: 40px;
     border-radius: 50%;
 }
 footer i{
     transition: transform 300ms ease-in-out;
     color: #642b68;
+    color: aliceblue;
 }
 footer i:hover{
     transform: scale(2,2);
