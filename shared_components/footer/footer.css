@@ -16,11 +16,11 @@ footer{
     box-sizing: border-box;
 }
 footer ul a{
-    background-color: #642b68;
+    background-color: #642b685c;
     display: grid;
     place-content: center;
     aspect-ratio: 1;
-    width: 40px;
+    width: 50px;
     border-radius: 50%;
 }
 footer i{

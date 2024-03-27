@@ -13,9 +13,7 @@ $(document).ready(()=>{
 
 function loadPagesLinks(pageName, elementToImport = "main"){
     let currentPage = localStorage.getItem("currentPage");
-    if(currentPage===undefined){
-
-    } else{
+    if(currentPage!==undefined){
         $(`#${currentPage}css`).remove();
         $(`#${currentPage}js`).remove();
     }
